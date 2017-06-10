@@ -1,0 +1,25 @@
+#calendar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.fc-day-grid-event .fc-content {
+	white-space:normal;
+}
+
+.fc-day:hover {
+	background-color: #f0f0f0;
+}
+
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}

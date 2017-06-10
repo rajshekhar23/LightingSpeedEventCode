@@ -1,0 +1,58 @@
+.navbar{
+	margin-bottom: 320px;
+    background-color: #337a84;
+}
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 15px 0 15px 0;
+}
+.navbar-inverse .navbar-nav>a, .navbar-inverse .navbar-nav>a:focus, .navbar-inverse
+ .navbar-nav>a:hover{
+    color: #fff;
+    background-color: #337a47;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    border-bottom:2px solid moccasin;
+}
+.navbar.navbar-fixed-top.fixed-theme {
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+    margin-top:10px;
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
+.logoBanner{
+	/*background: url(../images/logo.jpg) no-repeat center center/cover;*/
+	background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-right: 100px;
+	height:350px;
+	margin-top:140px;
+}
+.intro{
+	margin-top: 140px;
+	padding-top: 60px;
+	text-align: center;
+}

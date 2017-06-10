@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Lightning Speed Events </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbarCustom.css">
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <link href='css/fullcalendar.min.css' rel='stylesheet' />    
+    <link rel="stylesheet" type="text/css" href="css/customEventCalendar.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+        <nav id="header" class="navbar navbar-inverse navbar-fixed-top">
+            <div id="header-container" class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="brand" class="navbar-brand" data-scroll href="#header"><img src="images/logo1.png" width="250px" height="40px"></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- navigation menu -->
+                        <li><a data-scroll href="#header">Home</a></li>
+                        <li><a data-scroll href="#eventCalendar">Event Calendar</a></li>
+                        <li><a data-scroll href="#concepts">Our Concepts</a></li>
+                        <li><a data-scroll href="#services">Services</a></li>              
+                        <li><a data-scroll href="#signup">Sign Up</a></li>                  
+                        <li><a data-scroll href="#contact">Contact</a></li>                  
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav>
+    <section style="border-bottom:2px solid #ededed;margin-bottom: 40px">
+        <div class="container">
+            <div class="row calenderWrapper animatedParent">
+                <div class="col-md-6 animated bounceInLeft">
+                    <div class="intro">
+                        <h4>Networking | Funding | Dating | Friending | Outdoor Programs</h4>
+                        <h2>WELCOME TO LIGHTNING SPEED EVENTS</h2>
+                        <p>Best Organizing</p>
+                        <a id="eventCalendar" class="btn btn-warning btn-lg" data-scroll href="#signup">Register Now</a>
+                    </div>        
+                </div>            
+                <div class="col-md-6 logoBanner animated bounceInRight">
+                </div>
+                <div class="calendarDetails clearfix">
+                    <div class="pull-left searchbyevent">
+                        <label>Search By Events</label>
+                        <select class="form-control">
+                            <option value="">Select Event</option>
+                            <option value="networking">Networking</option>
+                            <option value="funding">Funding</option>
+                            <option value="dating">Dating</option>
+                            <option value="friending">Friending</option>
+                            <option value="outdoorPrograms">Outdoor Programs</option>
+                            <option value="all">All</option>
+                        </select>
+                    </div>
+                    <div class="pull-left searchbydate">
+                        <label>Search By Events</label>
+                        <input type="date" class="form-control"/>       
+                    </div>
+                    <div class="pull-left searchButton">
+                        <button class="btn btn-warning btn-lg">Search</button>
+                    </div>
+                    <div class="pull-left gridIcon">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                        <i class="glyphicon glyphicon-th"></i>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+    </section><br><br>
+    <section class="calendarWrapper">
+        <div id="calendar"></div>
+    </section>       
+    <section id="concepts" class="section services">
+        <div class="container">
+            <div class="row" style="background-color: whitesmoke;">
+                <div class="col-md-12">
+                    <h3 class="text-center">Our Concepts</h3>
+                </div>
+            </div>
+            <div class="row animatedParent" data-sequence="700">
+                <div class="col-md-3 animated bounceInLeft" data-id="1">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/about-4.jpg">
+                        </figure>
+                        <h4>LIGHTNING SPEED NETWORKING</h4>
+                        <p class="servicesPara">Looking to grow your business networking portfolio? We have it here with Lightning Speed Networking business events</p>
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                    <a href="#" style="">VIEW DETAILS</a>
+                    </div>
+                    </div>                                           
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 animated bounceInLeft" data-id="2">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/about-5.jpg">
+                        </figure>
+
+                        <h4>Lightning Speed Dating</h4>
+
+                        <p>How about finding your soulmate? You can find it at Lightning Speed Dating events.</p>
+
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                        <a href="#" style="">VIEW DETAILS</a>
+                    </div>
+                    </div>                    
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 animated bounceInRight" data-id="2">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/about-6.jpg">
+                        </figure>
+
+                        <h4>LIGHTNING SPEED FRIENDING</h4>
+
+                        <p>You just moved to the DMV area and want to build a friend list to share common interest? We got you covered with Lightning Speed Friending events</p>
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                        <a href="#" style="">VIEW DETAILS</a>
+                    </div>
+                   </div>                                         
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-3 animated bounceInRight" data-id="1">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/about-7.jpg">
+                        </figure>
+
+                        <h4>LIGHTNING SPEED FUNDING</h4>
+
+                        <p>Looking to get funding for your business idea? Check our events with Lightning Speed Funding.</p>
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                    <a href="#" style="">VIEW DETAILS</a>
+                    </div>
+                    </div>                    
+                </div><!-- /.col-md-4 -->                
+            </div><!-- /.row -->
+        </div>
+    </section>
+
+    
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="row" style="background-color: whitesmoke;">
+                <div class="col-md-12">
+                <h3 class="text-center">Services</h3>
+                </div>
+            </div>
+
+            <div class="row animatedParent" data-sequence="700">
+                <div class="col-md-3 animated bounceInLeft" data-id="1">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/a1.jpg">
+                        </figure>
+
+                        <h4>SEMINAR</h4>
+
+                        <p class="servicesPara">Special issues preserves the conversational character of the term 'seminar'</p>
+
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                    <a href="#" style="">VIEW DETAILS</a>
+                    </div>                                                              </div>                          
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 animated bounceInLeft" data-id="2">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/a2.jpg">
+                        </figure>
+
+                        <h4>WORKSHOP</h4>
+
+                        <p>The term workshop indicates a brief intensive program for a tiny low cluster of individuals that focuses on techniques and skills in a very specific field.</p>
+
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                    <a href="#" style="">VIEW DETAILS</a>
+                    </div>
+                    </div>                    
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 animated bounceInRight" data-id="2">
+                    <div class="conceptsDiv">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/a3.jpg">
+                        </figure>
+
+                        <h4>OUTDOOR PROGRAMS</h4>
+
+                        <p>You love nature and fun outdoor activities? Plenty of fun with Lightning Speed Activities and adventures.</p>
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                    <a href="#" style="">VIEW DETAILS</a>
+                    </div>
+                    </div>
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-3 animated bounceInRight" data-id="1">
+                    <div class="conceptsDiv"> 
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="images/a4.jpg">
+                        </figure>
+
+                        <h4>ENTERTAINMENT SERVICES</h4>
+
+                        <p>For every of your other entertainment needs, we are happy to provide you with our Lightning Speed Entertainment services team.</p>
+                    </div><!-- /.speaker -->
+                    <div class="details">
+                    <a href="#" style="">VIEW DETAILS</a>
+                    </div> 
+                    </div>                   
+                </div><!-- /.col-md-4 -->                
+            </div><!-- /.row -->
+        </div>
+    </section>
+    
+    <section id="signup" class="section registration">
+        <div class="container">
+            <div class="row" style="background-color: whitesmoke;">
+                <div class="col-md-12">
+                    <h3 class="text-center">Sign Up</h3>
+                </div>
+            </div>
+                
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="city" id="city" required>
+                                <option readonly>City</option>
+                                <option>City Name 1</option>
+                                <option>City Name 2</option>
+                                <option>City Name 3</option>
+                                <option>City Name 4</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="program" id="program" required>
+                                <option readonly>Select Your Program</option>
+                                <option>Program Name 1</option>
+                                <option>Program Name 2</option>
+                                <option>Program Name 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-success btn-lg" id="registration-submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="section location">
+        <div class="container">
+            <div class="row" style="background-color: whitesmoke;">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="padding: 8px 0;font-size: 30px;text-transform: uppercase;">Contact Us</h3>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col-sm-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>                
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Subject" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7"  placeholder="Message" id="cell" name="cell" required></textarea>
+                        </div>
+                        <button class="btn btn-success btn-lg" style="width:100%;">SUBMIT NOW</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Designed and <br> Developed by <a href="http://www.lightningspeedevents.com">Lightning Speed Events</a></p>
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <div class="modal fade-scale" id="myModal" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" style="top:25%;width:18%;">
+      <div class="modal-content" style="height:280px;">
+        <div class="modal-header">
+          <span><b>Event Details</b></span>
+          <button type="button" class="close" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-condensed table-striped">
+              <tr>
+                <td>Event Name</td>
+                <td><label>Birthday</label></td>
+              </tr>
+              <tr>
+                <td>Start Date</td>
+                <td><label>2017/06/01</label></td>
+              </tr>
+              <tr>
+                <td>End Date</td>
+                <td><label>2017/06/01</label></td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td><label>04:30 PM</label></td>
+              </tr>
+              <tr>
+                <td>Visit Site</td>
+                <td><a href="www.lightningspeedevent.com" target="_blank">Go To Link</a></td>
+              </tr>                                                        
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- script -->
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/navbarCustom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/customEventCalendar.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.js"></script>        
+    <script type="text/javascript">
+        $(document).on('click','.navbar-collapse.in',function(e) {
+            if( $(e.target).is('a') ) {
+                $(this).collapse('hide');
+            }
+        });  
+        $(document).ready(function(){
+            $(".fc-day").dblclick(function() {
+              $("#myModal").modal('show');
+            });
+            $("#myModal").on('shown.bs.modal',function(){
+                $(document).off('focusin.bs.modal');
+            });
+        });    
+    </script>
+</body>
+</html>
